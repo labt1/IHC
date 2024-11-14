@@ -44,15 +44,15 @@ const social = [
 ]
 
 const home = {
-    label: 'Home',
+    label: 'Inicio',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
+    headline: <>Interacción Humano Computador</>,
     subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
 }
 
 const about = {
-    label: 'About',
+    label: 'Videojuego',
     title: 'About me',
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
@@ -157,19 +157,115 @@ const about = {
 }
 
 const blog = {
-    label: 'Blog',
+    label: 'Proyecto Final',
     title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
+    description: `Read what ${person.name} has been up to recently`,
+    tableOfContent: {
+        display: true,
+        subItems: true
+    },
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
 }
 
 const work = {
-    label: 'Work',
+    label: 'Videojuego',
     title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
-    // Create new project pages by adding a new .mdx file to app/blog/posts
-    // All projects will be listed on the /home and /work routes
+    description: `Design and dev projects by ${person.name}`,
+
+    tableOfContent: {
+        display: true,
+        subItems: true
+    },
+
+    intro: {
+        display: true,
+        title: 'Introduction',
+        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+    },
+    work: {
+        display: true, // set to false to hide this section
+        title: 'Work Experience',
+        experiences: [
+            {
+                company: 'FLY',
+                timeframe: '2022 - Present',
+                role: 'Senior Design Engineer',
+                achievements: [
+                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
+                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/projects/project-01/cover-01.jpg',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
+                company: 'Creativ3',
+                timeframe: '2018 - 2022',
+                role: 'Lead Designer',
+                achievements: [
+                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                ],
+                images: [ ]
+            }
+        ]
+    },
+    studies: {
+        display: true, // set to false to hide this section
+        title: 'Studies',
+        institutions: [
+            {
+                name: 'University of Jakarta',
+                description: <>Studied software engineering.</>,
+            },
+            {
+                name: 'Build the Future',
+                description: <>Studied online marketing and personal branding.</>,
+            }
+        ]
+    },
+    technical: {
+        display: true, // set to false to hide this section
+        title: 'Technical skills',
+        skills: [
+            {
+                title: 'Figma',
+                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-02.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/cover-03.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'Next.js',
+                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            }
+        ]
+    }
 }
 
 const gallery = {

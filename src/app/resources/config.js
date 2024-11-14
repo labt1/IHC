@@ -11,10 +11,10 @@ const i18nOptions = {
 
 const routes = {
     '/':        true,
-    '/about':   true,
+    '/about':   false,
     '/work':    true,
     '/blog':    true,
-    '/gallery': true,
+    '/gallery': false,
 }
 
 // Enable password protection on selected routes
@@ -42,7 +42,7 @@ const style = {
 }
 
 const display = {
-    location: true,
+    location: false,
     time:     true
 }
 

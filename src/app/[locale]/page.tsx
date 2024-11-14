@@ -49,6 +49,7 @@ export default function Home(
 	const t = useTranslations();
 	const { home, about, person, newsletter } = renderContent(t);
 	return (
+		
 		<Flex
 			maxWidth="m" fillWidth gap="xl"
 			direction="column" alignItems="center">
@@ -88,6 +89,16 @@ export default function Home(
 								{home.headline}
 							</Heading>
 						</RevealFx>
+
+						<Text as="h2" size="m" color="primary">
+							Henry Yanqui
+							<br></br>
+							Jheremy Alvarez
+							<br></br>
+							Luis Bustamante
+						</Text>
+
+						{/*
 						<RevealFx translateY="8" delay={0.2}>
 							<Text
 								wrap="balance"
@@ -95,7 +106,8 @@ export default function Home(
 								variant="body-default-l">
 								{home.subline}
 							</Text>
-						</RevealFx>
+						</RevealFx>*/}
+						{/*
 						<RevealFx translateY="12" delay={0.4}>
 							<Button
 								data-border="rounded"
@@ -115,22 +127,25 @@ export default function Home(
 										{t("about.title")}
 								</Flex>
 							</Button>
-						</RevealFx>
+						</RevealFx>*/}
 					</Flex>
 				
 			</Flex>
-			<RevealFx translateY="16" delay={0.6}>
+			
+			{/*<RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1,1]} locale={locale}/>
-			</RevealFx>
-			{routes['/blog'] && (
+			</RevealFx>*/}
+
+			{/*{routes['/blog'] && (
 				<Flex fillWidth paddingX="20">
 					<Posts range={[1,2]} columns="2" locale={locale}/>
 				</Flex>
-			)}
-			<Projects range={[2]} locale={locale}/>
+			)}*/}
+
+			{/*<Projects range={[2]} locale={locale}/>
 			{ newsletter.display &&
 				<Mailchimp newsletter={newsletter} />
-			}
+			}*/}
 		</Flex>
 	);
 }

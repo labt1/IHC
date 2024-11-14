@@ -103,6 +103,7 @@ export default function About(
                         about={about} />
                 </Flex>
             )}
+
             <Flex
                 fillWidth
                 mobileDirection="column" justifyContent="center">
