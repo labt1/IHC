@@ -1,5 +1,5 @@
 import { getPosts } from '@/app/utils';
-import { Flex, Text } from '@/once-ui/components';
+import { Flex, Text, SmartImage } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
 import { baseURL, renderContent } from '@/app/resources';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
@@ -91,17 +91,17 @@ export default function Work(
             items: []
         },
         {
-            title: "4. Primera evaluacion con usuarios",
+            title: "4. Primera evaluación con usuarios",
             display: true,
             items: []
         },
         {
-            title: "5. Segunda Evaluacuion con usuarios",
+            title: "5. Segunda evaluación con usuarios",
             display: true,
             items: []
         },
         {
-            title: "6. Evaluacion de pricipios de Gestalt",
+            title: "6. Evaluación de pricipios de Gestalt",
             display: true,
             items: []
         },
@@ -164,10 +164,10 @@ export default function Work(
                     Creacion de la Idea
                 </Text>
 
-                <Flex 
-                    style={{transform: 'translateY(10%)', marginLeft: '3%' }}>
+                <Flex
+                    style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
                     <Text as="p" size="m" color="secondary">
-                        Creacion de la Idea
+                    La idea de este juego VR nació de una pregunta simple: ¿cómo sería estar completamente inmerso en un laberinto lleno de desafíos, donde la única forma de avanzar es usar herramientas y resolver problemas en tiempo real? Inspirado por la emoción de los juegos de escape y superar obstáculos, imaginé un entorno que combine el ingenio, la exploración y la tecnología. Así, se diseño un espacio donde los jugadores no solo enfrentan un reto físico y mental, sino que también experimentan la sensación única de escapar dentro de un mundo virtual completamente envolvente.
                     </Text>
                 </Flex>
 
@@ -175,45 +175,176 @@ export default function Work(
 
             <Flex
                 id={"2. Sketching"}
-                style={{ top: '50%', marginLeft: '5%' }}>
+                style={{ top: '50%', marginLeft: '5%', marginTop: '5%'}}
+                direction="column">
                 <Text as="h2" size="m" color="primary">
                     Sketching
                 </Text>
+
+                <Flex
+                    border="neutral-medium"
+                    borderStyle="solid-1"
+                    radius="m"
+                    fillWidth
+                    align='center'
+                    alignItems="center"
+                    justifyContent="center"
+                    style={{ top: '30%', width: '30%', marginTop: '2%', marginLeft: '33%', marginRight: '33%' }}
+
+                >
+                    <SmartImage
+                        enlarge
+                        aspectRatio="10/10"
+                        radius="m"
+                        alt={"/images/primera.gif"}
+                        src={"/images/sketch.jpg"}
+                        objectFit="fill"
+                        style={{ width: '100%', height: '100%' }} // Reduce la imagen al 50% del tamaño del contenedor
+                    />
+                </Flex>
+
+                <Flex
+                    style={{ transform: 'translateY(10%)', marginLeft: '3%',  marginTop: '2%' }}>
+                    <Text as="p" size="m" color="secondary">
+                        
+                    </Text>
+                </Flex>
+
             </Flex>
 
             <Flex
                 id={"3. Prototipo de Baja Fidelidad"}
-                style={{ top: '50%', marginLeft: '5%' }}>
+                style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}
+                direction="column">
                 <Text as="h2" size="m" color="primary">
                     Prototipo de Baja Fidelidad
                 </Text>
+
+                <Flex
+                    border="neutral-medium"
+                    borderStyle="solid-1"
+                    radius="m"
+                    fillWidth
+                    align='center'
+                    alignItems="center"
+                    justifyContent="center"
+                    style={{ top: '70%', width: '70%', marginTop: '2%', marginLeft: '20%' }}
+
+                >
+                    <SmartImage
+                        enlarge
+                        aspectRatio="10/10"
+                        radius="m"
+                        alt={"/images/evaluacion.jpg"}
+                        src={"/images/Part3.gif"}
+                        objectFit="contain"
+                        style={{ width: '100%', height: '100%' }} // Reduce la imagen al 50% del tamaño del contenedor
+                    />
+
+                <Text as="h2" size="m" color="primary" style={{ marginLeft: '3%', marginRight: '3%' }}>
+                    Enemigos y obstaculos
+                </Text>
+
+                    <SmartImage
+                        enlarge
+                        aspectRatio="10/10"
+                        radius="m"
+                        alt={"/images/evaluacion.jpg"}
+                        src={"/images/Part4.gif"}
+                        objectFit="contain"
+                        style={{ width: '100%', height: '100%' }} // Reduce la imagen al 50% del tamaño del contenedor
+                    />
+                </Flex>
+
             </Flex>
 
             <Flex
-                id={"4. Primera evaluacion con usuarios"}
-                style={{ top: '50%', marginLeft: '5%' }}>
+                id={"4. Primera evaluación con usuarios"}
+                style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}
+                direction="column">
                 <Text as="h2" size="m" color="primary">
-                    Primera evaluacion con usuarios
+                    Primera evaluación con usuarios
                 </Text>
+
+
+                <Flex
+                    border="neutral-medium"
+                    borderStyle="solid-1"
+                    radius="m"
+                    fillWidth
+                    align='center'
+                    alignItems="center"
+                    justifyContent="center"
+                    style={{ top: '70%', width: '70%', marginTop: '2%', marginLeft: '20%', marginRight: '20%' }}
+
+                >
+                    <SmartImage
+                        enlarge
+                        aspectRatio="19/10"
+                        radius="m"
+                        alt={"/images/evaluacion.jpg"}
+                        src={"/images/primera.gif"}
+                        objectFit="contain"
+                        style={{ width: '100%', height: '100%' }} // Reduce la imagen al 50% del tamaño del contenedor
+                    />
+                </Flex>
+
+                <Flex
+                    style={{ transform: 'translateY(10%)', marginLeft: '3%', marginTop: '3%' }}>
+                    <Text as="p" size="m" color="secondary">
+                        
+                    </Text>
+                </Flex>
+
             </Flex>
 
             <Flex
-                id={"5. Segunda Evaluacuion con usuarios"}
-                style={{ top: '50%', marginLeft: '5%' }}>
+                id={"5. Segunda evaluación con usuarios"}
+                style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}
+                direction="column">
                 <Text as="h2" size="m" color="primary">
-                    Segunda Evaluacuion con usuarios
+                    Segunda evaluación con usuarios
                 </Text>
+
+                <Flex
+                    border="neutral-medium"
+                    borderStyle="solid-1"
+                    radius="m"
+                    fillWidth
+                    align='center'
+                    alignItems="center"
+                    justifyContent="center"
+                    style={{ top: '70%', width: '70%', marginTop: '2%', marginLeft: '20%' }}
+
+                >
+                    <SmartImage
+                        enlarge
+                        aspectRatio="19/10"
+                        radius="m"
+                        alt={"/images/primera.gif"}
+                        src={"/images/primera.gif"}
+                        objectFit="contain"
+                        style={{ width: '100%', height: '100%' }} // Reduce la imagen al 50% del tamaño del contenedor
+                    />
+                </Flex>
+
+                <Flex
+                    style={{ transform: 'translateY(10%)', marginLeft: '3%', marginTop: '3%' }}>
+                    <Text as="p" size="m" color="secondary">
+                        
+                    </Text>
+                </Flex>
             </Flex>
 
             <Flex
-                id={"6. Evaluacion de pricipios de Gestalt"}
-                style={{ top: '50%', marginLeft: '5%' }}>
+                id={"6. Evaluación de pricipios de Gestalt"}
+                style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}>
                 <Text as="h2" size="m" color="primary">
-                    Evaluacion de pricipios de Gestalt
+                    Evaluación de pricipios de Gestalt
                 </Text>
             </Flex>
 
-            <Projects locale={locale} />
+            {/* <Projects locale={locale} /> */}
         </Flex>
     );
 }

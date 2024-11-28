@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, SmartImage } from '@/once-ui/components';
+import { Flex, Heading, Text, SmartImage, Grid } from '@/once-ui/components';
 import { Mailchimp } from '@/components';
 import { Posts } from '@/components/blog/Posts';
 import { baseURL, renderContent } from '@/app/resources'
@@ -61,40 +61,35 @@ export default function Blog(
 			items: []
 		},
 		{
-			title: "3. Experiencia",
+			title: "3. Objetivo",
 			display: true,
 			items: []
 		},
 		{
-			title: "4. Observaciones",
+			title: "4. Público Objetivo",
 			display: true,
 			items: []
 		},
 		{
-			title: "5. Entrevistas",
+			title: "5. Qué hará el proyecto",
 			display: true,
 			items: []
 		},
 		{
-			title: "6. Momentos Interesantes",
+			title: "6. Análisis de sistemas existentes",
 			display: true,
 			items: []
 		},
 		{
-			title: "7. Necesidades",
+			title: "7. Artículo Relacionado",
 			display: true,
 			items: []
 		},
-		{
-			title: "8. Conclusiones",
-			display: true,
-			items: []
-		}
 	]
 
 	const image =  // optional: leave the array empty if you don't want to display images
 	{
-		src: '/images/vision.png',
+		src: '/images/OIP.jpg',
 		alt: 'Once UI Project',
 		width: 1,
 		height: 1
@@ -164,8 +159,8 @@ export default function Blog(
 					align='center'
 					alignItems="center"
 					justifyContent="center"
-					style={{ top: '50%', width: '50%' }}
-					
+					style={{ top: '50%', width: '50%', marginLeft: '25%' }}
+
 				>
 					<SmartImage
 						enlarge
@@ -181,7 +176,7 @@ export default function Blog(
 				<Flex
 					style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
 					<Text as="p" size="m" color="secondary">
-						El uso de sistemas de videovigilancia ha crecido significativamente en áreas de seguridad pública y supervisión privada. Sin embargo, las interfaces actuales suelen ser complicadas y no centradas en la experiencia del usuario. Este proyecto busca desarrollar un sistema de videovigilancia con una interfaz intuitiva y accesible, mejorando la eficiencia y la experiencia de los usuarios en el monitoreo de espacios.
+						En el ámbito educativo, la química es una de las ciencias fundamentales para entender el mundo que nos rodea. Sin embargo, muchos estudiantes enfrentan barreras al momento de realizar prácticas de laboratorio, ya sea por falta de recursos, limitaciones de tiempo o preocupaciones de seguridad. Este proyecto propone el desarrollo de una aplicación móvil para Android que permita simular experimentos de química en un entorno virtual interactivo, ofreciendo una alternativa accesible, segura y educativa que complemente la enseñanza tradicional.
 					</Text>
 				</Flex>
 			</Flex>
@@ -196,122 +191,177 @@ export default function Blog(
 				<Flex
 					style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
 					<Text as="p" size="m" color="secondary">
-						Los usuarios de sistemas de videovigilancia, como operadores de seguridad y administradores, enfrentan desafíos al manejar múltiples cámaras y acceder a funciones específicas en interfaces complejas. Esto puede generar frustración y errores en situaciones críticas. La solución que proponemos facilitará la toma de decisiones en tiempo real y reducirá la carga cognitiva, brindando una experiencia de usuario más eficiente.
-
+						La enseñanza práctica de la química presenta diversos desafíos:
+						<br /><br />
+						- Acceso limitado a laboratorios físicos: Muchos estudiantes no tienen acceso regular a laboratorios debido a costos elevados o falta de infraestructura.
+						<br /><br />
+						- Riesgos asociados a experimentos químicos: El manejo de sustancias peligrosas puede representar un riesgo tanto para los estudiantes como para el personal docente.
+						<br /><br />
+						- Barreras tecnológicas en aplicaciones existentes: Algunas herramientas digitales son complejas, poco accesibles o no compatibles con dispositivos de gama baja.
 					</Text>
 				</Flex>
 			</Flex>
 
 			<Flex
-				id={"3. Experiencia"} direction="column"
+				id={"3. Objetivo"} direction="column"
 				style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}>
 				<Text as="h2" size="m" color="primary">
-					Experiencia
+					Objetivo
 				</Text>
 
 				<Flex
 					style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
 					<Text as="p" size="m" color="secondary">
-						- Usuarios objetivo: Operadores de seguridad y administradores que utilizan sistemas de videovigilancia en entornos públicos y privados.
-						<br /><br />
-						- Experiencia actual: Los usuarios a menudo se sienten abrumados por la complejidad de las interfaces y la dificultad para acceder a funciones críticas.
-
+						Desarrollar una aplicación móvil para Android (ChemLab) que permita a los usuarios realizar experimentos de química en un entorno virtual seguro e interactivo.
 					</Text>
 				</Flex>
 			</Flex>
 
 			<Flex
-				id={"4. Observaciones"} direction="column"
+				id={"4. Público Objetivo"} direction="column"
 				style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}>
 				<Text as="h2" size="m" color="primary">
-					Observaciones
+					Público Objetivo
 				</Text>
 
 				<Flex
 					style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
 					<Text as="p" size="m" color="secondary">
-						- Interacción con el sistema: Los operadores pasan mucho tiempo tratando de navegar por menús complicados y configuraciones.
+						La aplicación está dirigida principalmente a:
 						<br /><br />
-						- Errores comunes: Frecuentemente, los usuarios cometen errores al intentar cambiar entre cámaras o ajustar configuraciones debido a la falta de claridad en la interfaz.
+						- Estudiantes de secundaria y preparatoria que estudian química y necesitan apoyo práctico.
 						<br /><br />
-						- Frustración en situaciones críticas: En momentos de alta presión, como emergencias, la complejidad del sistema puede llevar a decisiones erróneas.
-
+						- Estudiantes universitarios en carreras científicas que requieren simulaciones avanzadas.
+						<br /><br />
+						- Profesores de química que buscan herramientas complementarias para sus clases.
 					</Text>
 				</Flex>
 			</Flex>
 
 			<Flex
-				id={"5. Entrevistas"} direction="column"
+				id={"5. Qué hará el proyecto"} direction="column"
 				style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}>
 				<Text as="h2" size="m" color="primary">
-					Entrevistas
+					Qué hará el proyecto
 				</Text>
 
 				<Flex
 					style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
 					<Text as="p" size="m" color="secondary">
-						- ¿Cuáles son los principales desafíos que enfrenta al usar el sistema de videovigilancia?
+						La aplicación permitirá a los usuarios:
 						<br /><br />
-						- ¿Qué funciones considera más importantes y por qué?
+						1. Realizar experimentos virtuales mediante simulaciones interactivas, como mezclas de sustancias químicas y observación de reacciones.
 						<br /><br />
-						- ¿Ha tenido experiencias frustrantes con la interfaz actual? Describa una situación.
+						2. Acceder a guías paso a paso para entender los procedimientos experimentales.
 						<br /><br />
-						- Resultados de las entrevistas: Los usuarios expresaron la necesidad de una interfaz más clara y accesible, así como de funciones que les permitan actuar rápidamente en situaciones críticas.
+						3. Consultar explicaciones teóricas relacionadas con cada experimento.
 						<br /><br />
+						4. Obtener retroalimentación visual y textual sobre el desarrollo de los experimentos.
+						<br /><br />
+						5. Personalizar la experiencia de usuario, como cambiar el modo de visualización (claro/oscuro) o ajustar el nivel de dificultad de las simulaciones.
 					</Text>
 				</Flex>
 			</Flex>
 
 			<Flex
-				id={"6. Momentos Interesantes"} direction="column"
+				id={"6. Análisis de sistemas existentes"} direction="column"
 				style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}>
 				<Text as="h2" size="m" color="primary">
-					Momentos Interesantes
+					Análisis de sistemas existentes
 				</Text>
 
 				<Flex
 					style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
 					<Text as="p" size="m" color="secondary">
-						- Caso de estudio: Un operador mencionó que en una situación de emergencia, perdió tiempo valioso tratando de encontrar la cámara correcta debido a la complejidad del sistema.
+						Aplicación Competencia, la principal competencia de este proyecto incluye:
 						<br /> <br />
-						- Sugerencias de los usuarios: Muchos usuarios sugirieron la implementación de un "modo de emergencia" que simplifique la interfaz y priorice las funciones críticas.
-
+						- Labster: Una herramienta avanzada para simulaciones científicas que destaca por su calidad gráfica pero no es accesible para todos los públicos.
+						<br /> <br />
+						- ChemCollective: Aunque es gratuita, su enfoque es muy académico y menos interactivo.
+						<br /> <br />
+						La aplicación propuesta se diferenciará al ofrecer una solución educativa gratuita, compatible con dispositivos de gama baja y con una experiencia de usuario amigable.
 					</Text>
 				</Flex>
 			</Flex>
 
 			<Flex
-				id={"7. Necesidades"} direction="column"
+				id={"7. Artículo Relacionado"} direction="column"
 				style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}>
 				<Text as="h2" size="m" color="primary">
-					Necesidades
+					Artículo Relacionado
 				</Text>
 
 				<Flex
-					style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
+					direction="column" style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
 					<Text as="p" size="m" color="secondary">
-						- Interfaz intuitiva: Los usuarios necesitan una interfaz que sea fácil de navegar y que reduzca la carga cognitiva.
+						Trujillo Yaipén, W., Curo Maquén, L., Paredes López, L., & Carbajal Cornejo, K. (2023). Eficiencia de los simuladores virtuales en la competencia de indagación para el aprendizaje de física elemental.
 						<br /> <br />
-						- Acceso rápido a funciones críticas: Es esencial que los operadores puedan acceder rápidamente a las cámaras y configuraciones más relevantes en situaciones de emergencia.
-						<br /> <br />
-						- Capacitación y soporte: Los usuarios requieren recursos de capacitación que les ayuden a familiarizarse con el sistema de manera efectiva.
-
+						El estudio concluye que, pese a las limitaciones, los simuladores virtuales son una herramienta valiosa para mejorar el aprendizaje en física elemental, destacando la necesidad de combinarlos con otras estrategias educativas para maximizar su efectividad.
 					</Text>
-				</Flex>
-			</Flex>
 
-			<Flex
-				id={"8. Conclusiones"} direction="column"
-				style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}>
-				<Text as="h2" size="m" color="primary">
-					Conclusiones
-				</Text>
+					<Grid
+						border="brand-medium"
+						borderStyle="solid-1"
+						columns="repeat(2, 1fr)"
+						gap="24"
+						padding="24"
+						background="brand-medium"
+						style={{ marginTop: '3%', marginBottom: '5%' }}
+					>
+						<Text as="h2" size="m" color="primary">
+							Ventajas
+						</Text>
+						<Text as="h2" size="m" color="primary">
+							Desventajas
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Interactividad y Experiencia Práctica: Los simuladores permiten una práctica interactiva entre lo experimental y lo real, ayudando a los estudiantes a comprender fenómenos complejos.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Dependencia de la Tecnología: La efectividad depende del acceso a dispositivos y conectividad adecuados.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Accesibilidad: Facilitan el acceso a recursos que, de otro modo, serían costosos o inviables en laboratorios reales.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Limitaciones de Realismo: Aunque son representaciones avanzadas, no reemplazan la experiencia completa de un laboratorio físico.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Incremento en el Interés y la Motivación: Los estudiantes se sienten más motivados al utilizar herramientas tecnológicas modernas.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Formación del Docente: Requiere que los profesores estén capacitados en el uso de simuladores, lo cual no siempre es el caso.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Adaptabilidad y Seguridad: Ideales para simular experimentos que implican altos costos, riesgos o tiempos prolongados de espera.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Costo Inicial: Aunque reducen costos a largo plazo, la implementación inicial puede ser costosa.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Desarrollo de Habilidades Científicas: Promueven la capacidad de indagación y análisis de datos mediante métodos como el científico.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Desafíos en Evaluación: Es más complejo evaluar habilidades prácticas únicamente con simuladores.
+						</Text>
+						<Text as="p" size="m" color="primary">
+							Flexibilidad: Pueden utilizarse para temas variados, desde cinemática y dinámica hasta electromagnetismo y ondas.
+						</Text>
 
-				<Flex
-					style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
-					<Text as="p" size="m" color="secondary">
-						El desarrollo de un sistema de videovigilancia centrado en el usuario no solo mejorará la experiencia de los operadores, sino que también contribuirá a una mayor seguridad y eficacia en la supervisión de espacios. Este proyecto tiene el potencial de transformar la forma en que se utilizan los sistemas de videovigilancia en diversas aplicaciones.
-					</Text>
+						<Text as="p" size="m" color="primary">
+
+						</Text>
+
+						<Text as="p" size="m" color="primary">
+							Enseñanza Eficiente: Los resultados muestran una mejora significativa en las competencias de aprendizaje tras el uso de simuladores.
+						</Text>
+
+						<Text as="p" size="m" color="primary">
+
+						</Text>
+
+					</Grid>
+
 				</Flex>
 			</Flex>
 
