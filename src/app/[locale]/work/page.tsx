@@ -86,7 +86,7 @@ export default function Work(
             items: []
         },
         {
-            title: "3. Prototipo de Baja Fidelidad",
+            title: "3. Capturas",
             display: true,
             items: []
         },
@@ -213,11 +213,11 @@ export default function Work(
             </Flex>
 
             <Flex
-                id={"3. Prototipo de Baja Fidelidad"}
+                id={"3. Capturas"}
                 style={{ top: '50%', marginLeft: '5%', marginTop: '5%' }}
                 direction="column">
                 <Text as="h2" size="m" color="primary">
-                    Prototipo de Baja Fidelidad
+                    Capturas
                 </Text>
 
                 <Flex
