@@ -292,7 +292,7 @@ export default function Blog(
 				</Text>
 
 				<Flex
-					direction="column" style={{ transform: 'translateY(10%)', marginLeft: '3%' }}>
+					direction="column" style={{ transform: 'translateY(2%)', marginLeft: '3%' }}>
 					<Text as="p" size="m" color="secondary">
 						Trujillo Yaipén, W., Curo Maquén, L., Paredes López, L., & Carbajal Cornejo, K. (2023). Eficiencia de los simuladores virtuales en la competencia de indagación para el aprendizaje de física elemental.
 						<br /> <br />
